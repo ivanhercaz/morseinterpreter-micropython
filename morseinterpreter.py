@@ -77,7 +77,8 @@ def send(pin,
     if pin.value == False:
         pin.value(True)
 
-    # Tiempo que el LED está encendido según el tipo de pulsación (corta, larga o espacio)
+    # Tiempo que el LED está encendido según el tipo de pulsación
+    # (corta, larga o espacio)
     long = short * 3
     space = short * 2
 
@@ -95,6 +96,7 @@ def send(pin,
 
             if e == " ":
                 flash(pin, space)
+
 
 try:
     send(pin=pinLed(16))
