@@ -46,8 +46,10 @@ MORSE = {"A": ".-",
          "!": "--..--",
          " ": " "}
 
+
 def pinLed(pin):
     return machine.Pin(pin, machine.Pin.OUT)
+
 
 def flash(pin, sec):
     pin.value(False)
@@ -57,8 +59,9 @@ def flash(pin, sec):
     
     return
 
+
 def send(pin,
-         message="Hola mundo!",
+         message="Bienvenido!",
          short=0.5):
     """
         message: mensaje a interpretar (por defecto: Hola mundo!")
@@ -92,7 +95,7 @@ def send(pin,
             
             if e == " ":
                 flash(pin, space)
-
+                
 try:
     send(pin=pinLed(16))
     
