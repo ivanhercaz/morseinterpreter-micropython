@@ -6,8 +6,11 @@ Se ha probado con una ESP8266, en la que el LED se encuentra en el pin 16. Este 
 
 ## Funciones
 
+Véase las *issues* etiquetadas como [*Enhancement*](https://github.com/ivanhercaz/morseinterpreter-micropython/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) para una lista completa de las funciones y mejoras que se contemplan.
+
 - [x] Enviar mensajes morse con un LED.
-- [ ] Interpretar mensajes LED con un sensor (idea de [Juan Ignacio Rodríguez de León (Euribates)](https://github.com/euribates).
+- [ ] Interpretar mensajes LED con un sensor (idea de [Juan Ignacio Rodríguez de León (Euribates)](https://github.com/euribates)).
+- [ ] Pantalla lectora.
 
 ## Agradecimientos
 
