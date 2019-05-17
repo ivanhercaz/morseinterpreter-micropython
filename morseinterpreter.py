@@ -56,7 +56,7 @@ def flash(pin, sec):
     time.sleep(sec)
     pin.value(True)
     time.sleep(sec)
-    
+
     return
 
 
@@ -70,35 +70,35 @@ def send(pin,
         short: representa la duración de la pulsación corta
             (por defecto: 0.5 segundos)
     """
-    
+
     print(message)
-        
+
     # Apaga el led en caso de que esté encendido
     if pin.value == False:
         pin.value(True)
-    
+
     # Tiempo que el LED está encendido según el tipo de pulsación (corta, larga o espacio)
     long = short * 3
     space = short * 2
-    
+
     for letter in message:
         code = MORSE.get(letter.upper())
-        
+
         for e in code:
             print("{} >> {}".format(letter, e))
-            
+
             if e == ".":
                 flash(pin, short)
-            
+
             if e == "-":
                 flash(pin, long)
-            
+
             if e == " ":
                 flash(pin, space)
-                
+
 try:
     send(pin=pinLed(16))
-    
+
 except KeyboardInterrupt:
     print("Se ha interrumpido el programa")
 
