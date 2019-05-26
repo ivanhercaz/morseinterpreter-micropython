@@ -6,6 +6,14 @@ Pequeño programa que interpreta cada letra con sus respectivas pulsaciones en m
 
 Se ha probado con una ESP8266, en la que el LED se encuentra en el pin 16. Este pequeño programa te permite seleccionar el pin en el que se encuentre el LED, por lo que debería ser compatible con otras placas.
 
+## Instalación
+
+Documentar en español el proceso de instalación necesario para el paquete.
+
+## Uso
+
+Documentar sus métodos.
+
 ## Funciones
 
 Véase las *issues* etiquetadas como [*Enhancement*](https://github.com/ivanhercaz/morseinterpreter-micropython/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) para una lista completa de las funciones y mejoras que se contemplan.
